@@ -1,0 +1,230 @@
+
+wheel.png
+size: 2048,2048
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+SoVang
+  rotate: false
+  xy: 1494, 780
+  size: 59, 51
+  orig: 59, 51
+  offset: 0, 0
+  index: -1
+SoXam
+  rotate: false
+  xy: 88, 92
+  size: 59, 51
+  orig: 59, 51
+  offset: 0, 0
+  index: -1
+a
+  rotate: false
+  xy: 2, 145
+  size: 516, 160
+  orig: 516, 160
+  offset: 0, 0
+  index: -1
+b
+  rotate: false
+  xy: 881, 1365
+  size: 516, 160
+  orig: 516, 160
+  offset: 0, 0
+  index: -1
+banana
+  rotate: false
+  xy: 522, 436
+  size: 241, 368
+  orig: 241, 368
+  offset: 0, 0
+  index: -1
+bar
+  rotate: false
+  xy: 638, 806
+  size: 241, 368
+  orig: 241, 368
+  offset: 0, 0
+  index: -1
+buff_item_10000_dis
+  rotate: false
+  xy: 881, 809
+  size: 66, 68
+  orig: 66, 68
+  offset: 0, 0
+  index: -1
+buff_item_10001_dis
+  rotate: false
+  xy: 522, 366
+  size: 66, 68
+  orig: 66, 68
+  offset: 0, 0
+  index: -1
+buff_item_10002_dis
+  rotate: false
+  xy: 1008, 439
+  size: 65, 68
+  orig: 65, 68
+  offset: 0, 0
+  index: -1
+buff_item_10003_dis
+  rotate: false
+  xy: 2, 59
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+c
+  rotate: false
+  xy: 881, 1203
+  size: 516, 160
+  orig: 516, 160
+  offset: 0, 0
+  index: -1
+cherry
+  rotate: false
+  xy: 765, 436
+  size: 241, 368
+  orig: 241, 368
+  offset: 0, 0
+  index: -1
+coins
+  rotate: false
+  xy: 1917, 1479
+  size: 42, 46
+  orig: 42, 46
+  offset: 0, 0
+  index: 100
+coins
+  rotate: false
+  xy: 1970, 1886
+  size: 40, 46
+  orig: 40, 46
+  offset: 0, 0
+  index: 50
+coins
+  rotate: false
+  xy: 522, 319
+  size: 38, 45
+  orig: 38, 45
+  offset: 0, 0
+  index: 25
+d
+  rotate: false
+  xy: 1399, 1365
+  size: 516, 160
+  orig: 516, 160
+  offset: 0, 0
+  index: -1
+diamond
+  rotate: false
+  xy: 1399, 833
+  size: 241, 368
+  orig: 241, 368
+  offset: 0, 0
+  index: -1
+dollar
+  rotate: false
+  xy: 1251, 463
+  size: 241, 368
+  orig: 241, 368
+  offset: 0, 0
+  index: -1
+dot
+  rotate: false
+  xy: 1885, 1180
+  size: 21, 21
+  orig: 21, 21
+  offset: 0, 0
+  index: -1
+e
+  rotate: false
+  xy: 881, 879
+  size: 516, 160
+  orig: 516, 160
+  offset: 0, 0
+  index: -1
+f
+  rotate: false
+  xy: 1399, 1203
+  size: 516, 160
+  orig: 516, 160
+  offset: 0, 0
+  index: -1
+frame
+  rotate: false
+  xy: 2, 1546
+  size: 930, 500
+  orig: 930, 500
+  offset: 0, 0
+  index: -1
+g
+  rotate: false
+  xy: 881, 1041
+  size: 516, 160
+  orig: 516, 160
+  offset: 0, 0
+  index: -1
+holder
+  rotate: false
+  xy: 2, 827
+  size: 634, 717
+  orig: 634, 717
+  offset: 0, 0
+  index: -1
+lemon
+  rotate: false
+  xy: 1642, 833
+  size: 241, 368
+  orig: 241, 368
+  offset: 0, 0
+  index: -1
+lightdot
+  rotate: false
+  xy: 2, 2
+  size: 55, 55
+  orig: 55, 55
+  offset: 0, 0
+  index: -1
+pointer
+  rotate: false
+  xy: 1970, 1934
+  size: 55, 112
+  orig: 55, 112
+  offset: 0, 0
+  index: -1
+rollframe
+  rotate: false
+  xy: 2, 307
+  size: 518, 518
+  orig: 518, 518
+  offset: 0, 0
+  index: -1
+seven
+  rotate: false
+  xy: 638, 1176
+  size: 241, 368
+  orig: 241, 368
+  offset: 0, 0
+  index: -1
+watermelon
+  rotate: false
+  xy: 1008, 509
+  size: 241, 368
+  orig: 241, 368
+  offset: 0, 0
+  index: -1
+wheel
+  rotate: false
+  xy: 934, 1527
+  size: 516, 519
+  orig: 516, 519
+  offset: 0, 0
+  index: -1
+wheell
+  rotate: false
+  xy: 1452, 1527
+  size: 516, 519
+  orig: 516, 519
+  offset: 0, 0
+  index: -1

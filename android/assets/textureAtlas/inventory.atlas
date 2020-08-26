@@ -1,0 +1,174 @@
+
+inventory.png
+size: 2048,512
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+arrow
+  rotate: false
+  xy: 201, 102
+  size: 80, 70
+  orig: 80, 70
+  offset: 0, 0
+  index: -1
+btnEvent
+  rotate: false
+  xy: 1006, 438
+  size: 197, 72
+  orig: 197, 72
+  offset: 0, 0
+  index: -1
+btnGive
+  rotate: false
+  xy: 2, 100
+  size: 197, 72
+  orig: 197, 72
+  offset: 0, 0
+  index: -1
+btnMergeCard
+  rotate: false
+  xy: 1205, 438
+  size: 197, 72
+  orig: 197, 72
+  offset: 0, 0
+  index: -1
+btnMergePiece
+  rotate: false
+  xy: 304, 179
+  size: 197, 72
+  orig: 197, 72
+  offset: 0, 0
+  index: -1
+cardBillionaire
+  rotate: false
+  xy: 554, 227
+  size: 180, 283
+  orig: 180, 283
+  offset: 0, 0
+  index: -1
+cursor
+  rotate: false
+  xy: 1929, 328
+  size: 7, 100
+  orig: 7, 100
+  offset: 0, 0
+  index: -1
+frmScl
+  rotate: false
+  xy: 1491, 288
+  size: 100, 38
+  orig: 100, 38
+  offset: 0, 0
+  index: -1
+icCard1
+  rotate: false
+  xy: 1065, 254
+  size: 140, 182
+  orig: 140, 182
+  offset: 0, 0
+  index: -1
+icCard2
+  rotate: false
+  xy: 1207, 254
+  size: 140, 182
+  orig: 140, 182
+  offset: 0, 0
+  index: -1
+icCard3
+  rotate: false
+  xy: 1349, 254
+  size: 140, 182
+  orig: 140, 182
+  offset: 0, 0
+  index: -1
+icCard4
+  rotate: false
+  xy: 1491, 328
+  size: 140, 182
+  orig: 140, 182
+  offset: 0, 0
+  index: -1
+icCountDown
+  rotate: false
+  xy: 1929, 430
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+icCountUp
+  rotate: false
+  xy: 2, 18
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+icPiece1
+  rotate: false
+  xy: 452, 2
+  size: 146, 175
+  orig: 146, 175
+  offset: 0, 0
+  index: -1
+icPiece2
+  rotate: false
+  xy: 1633, 335
+  size: 146, 175
+  orig: 146, 175
+  offset: 0, 0
+  index: -1
+icPiece3
+  rotate: false
+  xy: 1781, 335
+  size: 146, 175
+  orig: 146, 175
+  offset: 0, 0
+  index: -1
+icPiece4
+  rotate: false
+  xy: 304, 2
+  size: 146, 175
+  orig: 146, 175
+  offset: 0, 0
+  index: -1
+overlap
+  rotate: false
+  xy: 903, 208
+  size: 160, 200
+  orig: 160, 200
+  offset: 0, 0
+  index: -1
+overlay
+  rotate: false
+  xy: 736, 410
+  size: 268, 100
+  orig: 268, 100
+  offset: 0, 0
+  index: -1
+panel
+  rotate: false
+  xy: 2, 253
+  size: 550, 257
+  orig: 550, 257
+  offset: 0, 0
+  index: -1
+textbox
+  rotate: false
+  xy: 2, 174
+  size: 300, 77
+  orig: 300, 77
+  offset: 0, 0
+  index: -1
+tileScl
+  rotate: false
+  xy: 1065, 214
+  size: 100, 38
+  orig: 100, 38
+  offset: 0, 0
+  index: -1
+whiteTile
+  rotate: false
+  xy: 736, 209
+  size: 165, 199
+  orig: 165, 199
+  offset: 0, 0
+  index: -1

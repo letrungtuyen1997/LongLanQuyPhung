@@ -1,0 +1,216 @@
+
+effect.png
+size: 2048,512
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+004
+  rotate: false
+  xy: 1167, 86
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+028
+  rotate: false
+  xy: 947, 152
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+034
+  rotate: false
+  xy: 1373, 489
+  size: 508, 21
+  orig: 508, 21
+  offset: 0, 0
+  index: -1
+03412
+  rotate: false
+  xy: 436, 402
+  size: 254, 11
+  orig: 254, 11
+  offset: 0, 0
+  index: -1
+13-2
+  rotate: false
+  xy: 1272, 317
+  size: 96, 93
+  orig: 96, 93
+  offset: 0, 0
+  index: -1
+208
+  rotate: false
+  xy: 1077, 152
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+222
+  rotate: false
+  xy: 2, 352
+  size: 432, 158
+  orig: 432, 158
+  offset: 0, 0
+  index: -1
+26-1
+  rotate: false
+  xy: 274, 39
+  size: 128, 129
+  orig: 128, 129
+  offset: 0, 0
+  index: -1
+4
+  rotate: false
+  xy: 1035, 86
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+FX_Nature_Leaf_3
+  rotate: false
+  xy: 1207, 152
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+Group 2
+  rotate: false
+  xy: 618, 118
+  size: 180, 282
+  orig: 180, 282
+  offset: 0, 0
+  index: -1
+L002
+  rotate: false
+  xy: 917, 301
+  size: 93, 109
+  orig: 93, 109
+  offset: 0, 0
+  index: -1
+NPC_ChiLongB_Skill_1
+  rotate: false
+  xy: 1012, 282
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+cardBillionaire
+  rotate: false
+  xy: 436, 117
+  size: 180, 283
+  orig: 180, 283
+  offset: 0, 0
+  index: -1
+chibang
+  rotate: false
+  xy: 1373, 410
+  size: 278, 77
+  orig: 278, 77
+  offset: 0, 0
+  index: -1
+flower
+  rotate: false
+  xy: 800, 103
+  size: 145, 193
+  orig: 145, 193
+  offset: 0, 0
+  index: -1
+guang02
+  rotate: false
+  xy: 1653, 405
+  size: 186, 82
+  orig: 186, 82
+  offset: 0, 0
+  index: -1
+lbCongra
+  rotate: false
+  xy: 929, 412
+  size: 442, 98
+  orig: 442, 98
+  offset: 0, 0
+  index: -1
+lbMergeSucces
+  rotate: false
+  xy: 436, 415
+  size: 491, 95
+  orig: 491, 95
+  offset: 0, 0
+  index: -1
+lighthg
+  rotate: false
+  xy: 2, 170
+  size: 382, 180
+  orig: 382, 180
+  offset: 0, 0
+  index: -1
+liuxing7
+  rotate: false
+  xy: 947, 109
+  size: 86, 41
+  orig: 86, 41
+  offset: 0, 0
+  index: -1
+ls010
+  rotate: false
+  xy: 1142, 282
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+ls020
+  rotate: false
+  xy: 1370, 314
+  size: 94, 94
+  orig: 94, 94
+  offset: 0, 0
+  index: -1
+r01
+  rotate: false
+  xy: 1466, 328
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+shanguang
+  rotate: false
+  xy: 1548, 344
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+ui_PiPei_Kuang
+  rotate: false
+  xy: 800, 298
+  size: 115, 115
+  orig: 115, 115
+  offset: 0, 0
+  index: -1
+ui_jinjiechenggong01
+  rotate: false
+  xy: 2, 2
+  size: 270, 166
+  orig: 270, 166
+  offset: 0, 0
+  index: -1
+ui_jinjiechenggong02
+  rotate: false
+  xy: 1883, 496
+  size: 14, 14
+  orig: 14, 14
+  offset: 0, 0
+  index: -1
+wsparticle37
+  rotate: false
+  xy: 1101, 86
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+xian04
+  rotate: false
+  xy: 274, 10
+  size: 78, 27
+  orig: 78, 27
+  offset: 0, 0
+  index: -1

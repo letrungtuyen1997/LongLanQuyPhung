@@ -1,0 +1,72 @@
+[
+  {
+    "region": "icon0",
+    "id": 0,
+    "quantity": 1,
+    "percent": 1000,
+    "pos": 0
+  },
+  {
+    "region": "icon1",
+    "id": 1,
+    "quantity": 3,
+    "percent": 1000,
+    "pos": 5
+  },
+  {
+    "region": "icon2",
+    "id": 2,
+    "quantity": 3,
+    "percent": 1000,
+    "pos": 1
+  },
+  {
+    "region": "icon3",
+    "id": 3,
+    "quantity": 1,
+    "percent": 1000,
+    "pos": 2
+  },
+  {
+    "region": "icon4",
+    "id": 4,
+    "quantity": 1,
+    "percent": 1000,
+    "pos": 3
+  },
+  {
+    "region": "icon5",
+    "id": 5,
+    "quantity": 3,
+    "percent": 1000,
+    "pos": 4
+  },
+  {
+    "region": "icon6",
+    "id": 6,
+    "quantity": 3,
+    "percent": 1000,
+    "pos": 6
+  },
+  {
+    "region": "icon7",
+    "id": 7,
+    "quantity": 3,
+    "percent": 1000,
+    "pos": 7
+  },
+  {
+    "region": "icon8",
+    "id": 8,
+    "quantity": 3,
+    "percent": 1000,
+    "pos": 8
+  },
+  {
+    "region": "icon9",
+    "id": 9,
+    "quantity": 3,
+    "percent": 1000,
+    "pos": 9
+  }
+]

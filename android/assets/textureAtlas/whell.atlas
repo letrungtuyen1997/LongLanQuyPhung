@@ -1,0 +1,167 @@
+
+whell.png
+size: 2048,1024
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+btnQuay
+  rotate: false
+  xy: 2, 169
+  size: 302, 135
+  orig: 302, 135
+  offset: 0, 0
+  index: -1
+icon0
+  rotate: false
+  xy: 438, 132
+  size: 130, 172
+  orig: 130, 172
+  offset: 0, 0
+  index: -1
+icon1
+  rotate: false
+  xy: 306, 132
+  size: 130, 172
+  orig: 130, 172
+  offset: 0, 0
+  index: -1
+icon2
+  rotate: false
+  xy: 570, 132
+  size: 130, 172
+  orig: 130, 172
+  offset: 0, 0
+  index: -1
+icon3
+  rotate: false
+  xy: 831, 622
+  size: 130, 172
+  orig: 130, 172
+  offset: 0, 0
+  index: -1
+icon4
+  rotate: false
+  xy: 963, 622
+  size: 130, 172
+  orig: 130, 172
+  offset: 0, 0
+  index: -1
+icon5
+  rotate: false
+  xy: 1095, 622
+  size: 130, 172
+  orig: 130, 172
+  offset: 0, 0
+  index: -1
+icon6
+  rotate: false
+  xy: 1227, 622
+  size: 130, 172
+  orig: 130, 172
+  offset: 0, 0
+  index: -1
+icon7
+  rotate: false
+  xy: 1359, 622
+  size: 130, 172
+  orig: 130, 172
+  offset: 0, 0
+  index: -1
+icon8
+  rotate: false
+  xy: 1491, 614
+  size: 130, 173
+  orig: 130, 173
+  offset: 0, 0
+  index: -1
+icon9
+  rotate: false
+  xy: 1623, 615
+  size: 130, 172
+  orig: 130, 172
+  offset: 0, 0
+  index: -1
+kim
+  rotate: false
+  xy: 669, 627
+  size: 160, 177
+  orig: 160, 177
+  offset: 0, 0
+  index: -1
+rw0
+  rotate: false
+  xy: 669, 806
+  size: 243, 165
+  orig: 243, 165
+  offset: 0, 0
+  index: -1
+rw1
+  rotate: false
+  xy: 2, 2
+  size: 243, 165
+  orig: 243, 165
+  offset: 0, 0
+  index: -1
+rw2
+  rotate: false
+  xy: 1208, 796
+  size: 145, 175
+  orig: 145, 175
+  offset: 0, 0
+  index: -1
+rw3
+  rotate: false
+  xy: 914, 796
+  size: 145, 175
+  orig: 145, 175
+  offset: 0, 0
+  index: -1
+rw4
+  rotate: false
+  xy: 1355, 796
+  size: 145, 175
+  orig: 145, 175
+  offset: 0, 0
+  index: -1
+rw5
+  rotate: false
+  xy: 1061, 796
+  size: 145, 175
+  orig: 145, 175
+  offset: 0, 0
+  index: -1
+rw6
+  rotate: false
+  xy: 669, 443
+  size: 140, 182
+  orig: 140, 182
+  offset: 0, 0
+  index: -1
+rw7
+  rotate: false
+  xy: 1502, 789
+  size: 140, 182
+  orig: 140, 182
+  offset: 0, 0
+  index: -1
+rw8
+  rotate: false
+  xy: 1644, 789
+  size: 140, 182
+  orig: 140, 182
+  offset: 0, 0
+  index: -1
+rw9
+  rotate: false
+  xy: 1786, 789
+  size: 140, 182
+  orig: 140, 182
+  offset: 0, 0
+  index: -1
+wheel
+  rotate: false
+  xy: 2, 306
+  size: 665, 665
+  orig: 665, 665
+  offset: 0, 0
+  index: -1
