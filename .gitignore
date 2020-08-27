@@ -65,7 +65,7 @@ x86_64/
 robovm-build/
 ipch/
 /dist
-html/
+html/build
 
 
 *.a
