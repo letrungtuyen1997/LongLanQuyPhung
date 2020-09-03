@@ -117,12 +117,17 @@ public class Gift implements HttpGift.PostGift {
         tfs.cursor = new TextureRegionDrawable(TextureAtlasC.InventoryAtlas.findRegion("cursor"));
         tfs.selection = new TextureRegionDrawable(TextureAtlasC.InventoryAtlas.findRegion("overlay"));
         /////////// textfield megaID/////////
-        Label lb = new Label("Mời bạn nhập mã MEGA1",new Label.LabelStyle(BitmapFontC.font_white,null));
+        Label lb = new Label("Nhập mã MEGA1 của bạn bè",new Label.LabelStyle(BitmapFontC.font_white,null));
         lb.setFontScale(0.7f);
         lb.setAlignment(Align.center);
         lb.setPosition(GStage.getWorldWidth()/2,GStage.getWorldHeight()/2,Align.center);
         gr.addActor(lb);
-        megaIDTf = new TextField("MEGA1", tfs);
+        Label lb2 = new Label("Ví dụ MEGA19999999999",new Label.LabelStyle(BitmapFontC.font_white,null));
+        lb2.setFontScale(0.5f);
+        lb2.setAlignment(Align.center);
+        lb2.setPosition(GStage.getWorldWidth()/2,lb.getY()+lb.getPrefHeight()*2.5f,Align.center);
+        gr.addActor(lb2);
+        megaIDTf = new TextField("", tfs);
         megaIDTf.setWidth(400);
         megaIDTf.setHeight(100);
         megaIDTf.getStyle().font.getData().setScale(0.5f);
@@ -130,7 +135,7 @@ public class Gift implements HttpGift.PostGift {
         ChilGr.addActor(megaIDTf);
         ChilGr.setSize(megaIDTf.getPrefWidth(),megaIDTf.getPrefHeight());
         ChilGr.setOrigin(Align.center);
-        ChilGr.setPosition(GStage.getWorldWidth()/2,lb.getY()+lb.getPrefHeight()*3.5f);
+        ChilGr.setPosition(GStage.getWorldWidth()/2,lb2.getY()+lb2.getPrefHeight()*5.5f);
         gr.addActor(ChilGr);
 
         if(Gdx.app.getGraphics().getType() == Graphics.GraphicsType.WebGL) {
@@ -143,7 +148,7 @@ public class Gift implements HttpGift.PostGift {
                 megaIDTf.setText("");
                 super.clicked(event, x, y);
                 //GStage.disableInput(true);
-                GMain.openTextField("MEGA1: ", megaIDTf.getText(), new IPlatform.OnPopupCallback() {
+                GMain.openTextField("", megaIDTf.getText(), new IPlatform.OnPopupCallback() {
                     @Override
                     public void OnValue(String value) {
                         megaIDTf.setText(value);
@@ -180,7 +185,7 @@ public class Gift implements HttpGift.PostGift {
         Label lbAmount = new Label("Chọn số lượng",new Label.LabelStyle(BitmapFontC.font_white,null));
         lbAmount.setFontScale(0.7f);
         lbAmount.setAlignment(Align.center);
-        lbAmount.setPosition(GStage.getWorldWidth()/2,ChilGr.getY()+ChilGr.getHeight()*2f,Align.center);
+        lbAmount.setPosition(GStage.getWorldWidth()/2,ChilGr.getY()+ChilGr.getHeight()*1.5f,Align.center);
         gr.addActor(lbAmount);
         Image frm = GUI.createImage(TextureAtlasC.InventoryAtlas,"textbox");
         frm.setPosition(GStage.getWorldWidth()/2,lbAmount.getY()+lbAmount.getPrefHeight()*3.5f,Align.center);

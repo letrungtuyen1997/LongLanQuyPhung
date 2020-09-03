@@ -18,6 +18,7 @@ import com.platform.IPlatform;
 import com.ss.GMain;
 import com.ss.commons.BitmapFontC;
 import com.ss.commons.TextureAtlasC;
+import com.ss.commons.Tweens;
 import com.ss.core.action.exAction.GSimpleAction;
 import com.ss.core.exSprite.GShapeSprite;
 import com.ss.core.util.GLayer;
@@ -130,9 +131,10 @@ public class Mission implements HttpMission.GetMission {
                 label.setPosition(tile.getX()+20,tile.getY()+tile.getHeight()*0.7f,Align.left);
                 grT.addActor(label);
               ///////////// title 1///////
-              Label label1 = new Label("Phần thưởng: +"+bonus+" lượt",new Label.LabelStyle(BitmapFontC.Font_brown_thin,Color.GREEN));
-              label1.setFontScale(0.4f,-0.4f);
+              Label label1 = new Label("Phần thưởng: +"+bonus+" lượt",new Label.LabelStyle(BitmapFontC.font_brown,null));
+              label1.setFontScale(0.3f,-0.3f);
               label1.setAlignment(Align.left);
+
               label1.setPosition(tile.getX()+20,tile.getY()+tile.getHeight()*0.5f,Align.left);
               grT.addActor(label1);
               ///////////// title 1///////
@@ -140,14 +142,16 @@ public class Mission implements HttpMission.GetMission {
               if(Type==6){
                 lb3="làm một lần!";
               }
-              Label label2 = new Label("Trạng thái: "+lb3,new Label.LabelStyle(BitmapFontC.font_white,Color.ORANGE));
+              Label label2 = new Label("Trạng thái: "+lb3,new Label.LabelStyle(BitmapFontC.font_brown,null));
               label2.setFontScale(0.3f,-0.3f);
               label2.setAlignment(Align.left);
               label2.setPosition(tile.getX()+20,tile.getY()+tile.getHeight()*0.3f,Align.left);
               grT.addActor(label2);
-
-
-                //////// button join/////////
+              if(Type==0||Type==1){
+                  label1.setPosition(tile.getX()+20,tile.getY()+tile.getHeight()*0.4f,Align.left);
+                  label2.setPosition(tile.getX()+20,tile.getY()+tile.getHeight()*0.2f,Align.left);
+              }
+                    //////// button join/////////
                 Image btn = GUI.createImage(TextureAtlasC.UiAtlas,"btnJoin");
                 btn.setScale(0.9f,-0.9f);
                 btn.setOrigin(Align.center);
@@ -161,14 +165,14 @@ public class Mission implements HttpMission.GetMission {
                 btn2.setPosition(tile.getX()+tile.getWidth()-btn.getWidth(),tile.getY()+tile.getHeight()*0.2f);
                 grT.addActor(btn2);
                 btn2.setName(""+Type);
+                int taget=0;
                 if(Type==2||Type==3){
-                  int taget=0;
                   if(Type==2)
                     taget=1;
                   if(Type==3)
                     taget=5;
                   ////////// tien trinh ///////
-                  Label lb = new Label("tiến độ: "+count+"/"+taget,new Label.LabelStyle(BitmapFontC.font_white,Color.GREEN));
+                  Label lb = new Label("tiến độ: "+count+"/"+taget,new Label.LabelStyle(BitmapFontC.font_brown,Color.GREEN));
                   lb.setFontScale(0.3f,-0.3f);
                   lb.setAlignment(Align.left);
                   lb.setPosition(btn2.getX()+btn2.getWidth()*0.2f,btn2.getY()+btn2.getHeight()*1.5f,Align.left);
@@ -185,10 +189,13 @@ public class Mission implements HttpMission.GetMission {
                 arrBtnFinish.add(btn2);
                 arrJsonValue.add(arrQestion);
                 ////////// setDefault button ////////
-                if ((Type==0||Type==1)){
+                if ((Type==0||Type==1||Type==2||Type==3)){
                   btn.setVisible(false);
                   if(Status==true){
                     btn2.setColor(Color.DARK_GRAY);
+                  }
+                  if((Type==2 && count<taget)||(Type==3 && count<taget)){
+                      btn2.setColor(Color.DARK_GRAY);
                   }
                 }else{
                   btn2.setVisible(false);
@@ -278,6 +285,9 @@ public class Mission implements HttpMission.GetMission {
                             @Override
                             public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
                               SoundEffect.Playmusic(SoundEffect.click);
+                              //Tweens.setTimeout(group,1f,()->{
+                                  httpMission.PostJoinMisson(arrType.get(arrBtnJoin.indexOf(btn,true)));
+                              //});
                               GMain.shareFb(new IPlatform.OnShareCallback() {
                                 @Override
                                 public void OnValue(boolean value) {
@@ -356,7 +366,7 @@ public class Mission implements HttpMission.GetMission {
         group.addActor(blackOverlay);
 
         ///////// label //////////
-        Label lb = new Label("chúc mừng bạn hoành thành nhiệm vụ\ntặng bạn "+bonus+" lượt",new Label.LabelStyle(BitmapFontC.font_white,null));
+        Label lb = new Label("chúc mừng bạn hoàn thành\nnhiệm vụ",new Label.LabelStyle(BitmapFontC.font_white,null));
         lb.setFontScale(0.6f);
         lb.setAlignment(Align.center);
         lb.setPosition(GStage.getWorldWidth()/2,GStage.getWorldHeight()/2,Align.center);

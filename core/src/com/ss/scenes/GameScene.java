@@ -63,6 +63,7 @@ public class GameScene extends GScreen implements HttpGetToken.GetUserInfo {
     private     int             count               =0;
     private     int             countHeartbeat      =0;
     private     int             countdown           =0;
+    public      GShapeSprite    redDot              = new GShapeSprite();
 
   @Override
     public void dispose() {
@@ -227,6 +228,10 @@ public class GameScene extends GScreen implements HttpGetToken.GetUserInfo {
         btnMall.setOrigin(Align.center);
         btnMall.setPosition(GStage.getWorldWidth()-btnMall.getWidth()*0.6f,GStage.getWorldHeight()*0.15f,Align.center);
         MainGroup.addActor(btnMall);
+        redDot.createCircle(true,btnMall.getX()+10,btnMall.getY()+10,10);
+        redDot.setColor(Color.RED);
+        MainGroup.addActor(redDot);
+        redDot.setVisible(false);
         ////// event //////
         btnMall.addListener(new ClickListener(){
             @Override
@@ -252,6 +257,7 @@ public class GameScene extends GScreen implements HttpGetToken.GetUserInfo {
         });
 
     }
+
     private void History(){
         btnHistory = GUI.createImage(TextureAtlasC.UiAtlas,"btnHistory");
         btnHistory.setOrigin(Align.center);
@@ -415,6 +421,8 @@ public class GameScene extends GScreen implements HttpGetToken.GetUserInfo {
         GShapeSprite blackSprite = new GShapeSprite();
         GClipGroup clipGroup = new GClipGroup();
         Image frmTxtShow = GUI.createImage(TextureAtlasC.UiAtlas,"frmTxtShow");
+        frmTxtShow.setSize(GStage.getWidth()*0.8f,frmTxtShow.getHeight());
+        frmTxtShow.setOrigin(Align.center);
         grAlert.addActor(frmTxtShow);
 //        blackSprite.createRectangle(true,0,0,GStage.getWorldWidth()*0.9f,60);
 
@@ -476,7 +484,7 @@ public class GameScene extends GScreen implements HttpGetToken.GetUserInfo {
           httpGetToken.GetCountDown();
           wheelItem.UpdateTurn();
           httpGetToken.GetNotice();
-
+          httpGetToken.checkMall();
         }else {
             notice(GStage.getWorldWidth()/2,GStage.getWorldHeight()/2,"lỗi mạng",Color.RED);
         }
@@ -498,6 +506,7 @@ public class GameScene extends GScreen implements HttpGetToken.GetUserInfo {
               // System.out.println("check heartbeat: "+countHeartbeat);
               if(countHeartbeat==data.get("heartbeat").asInt()){
                 httpGetToken.GetNotice();
+                httpGetToken.checkMall();
                 return true;
               }
             }
@@ -588,7 +597,23 @@ public class GameScene extends GScreen implements HttpGetToken.GetUserInfo {
     }
   }
 
-  @Override
+    @Override
+    public void CheckMall(JsonValue data) {
+        System.out.println("check data mail: "+data);
+        if(data.get("status_code").asInt()==2000) {
+            if(data ==null || data.get("result").size==0){
+                redDot.setVisible(false);
+                System.out.println("turn off");
+            }else {
+                redDot.setVisible(true);
+                System.out.println("turn on");
+            }
+        }else {
+            redDot.setVisible(false);
+        }
+    }
+
+    @Override
     public void Fail(String s) {
         finishLoad();
         notice(GStage.getWorldWidth()/2,GStage.getWorldHeight()/2,"lỗi mạng!!",Color.RED);

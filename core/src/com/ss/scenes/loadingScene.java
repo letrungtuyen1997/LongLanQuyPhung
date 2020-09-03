@@ -43,9 +43,10 @@ public class loadingScene extends GScreen {
         if(Gdx.app.getGraphics().getType() == Graphics.GraphicsType.WebGL) {
             String token = GMain.platform.GetToken();
             GMain.platform.log("get token form web: " + token);
+            GMain.platform.log("code moi");
             Config.token = token;
         }else {
-            Config.token = "123456";
+            Config.token ="123456";
         }
     }
     static boolean firstShow = false;

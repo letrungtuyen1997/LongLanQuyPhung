@@ -115,7 +115,7 @@ public class Mall implements HttpMall.GetMission {
                     Image tile = GUI.createImage(TextureAtlasC.UiAtlas,"tile");
                     grT.addActor(tile);
                     ///////////// title ///////
-                    Label label = new Label("bạn được "+user+" tặng\n"+amount+" "+name+"\nVào lúc "+ Utils.ConvertDateTime(time+""),new Label.LabelStyle(BitmapFontC.Font_brown_thin,null));
+                    Label label = new Label("Bạn được "+user+" tặng\n"+amount+" "+name+"\nVào lúc "+ Utils.ConvertDateTime(time+""),new Label.LabelStyle(BitmapFontC.Font_brown_thin,null));
                     label.setFontScale(0.35f,-0.35f);
                     label.setAlignment(Align.left);
                     label.setPosition(tile.getX()+20,tile.getY()+tile.getHeight()/2,Align.left);
@@ -231,6 +231,9 @@ public class Mall implements HttpMall.GetMission {
             arrTime.clear();
             renderListView(data);
             eventBtn();
+            if(data==null||data.get("result").size==0){
+                gameScene.redDot.setVisible(false);
+            }
         }else {
             notice(GStage.getWorldWidth()/2,GStage.getWorldHeight()/2,"lỗi",Color.RED);
         }

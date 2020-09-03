@@ -17,12 +17,14 @@ public class HttpGetToken {
 //    private String                     token              = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYW1wYWlnbl9pZCI6IkxOSlNaR0FCQ3Nma3I4N3I5bTkxIiwidXNlcl9pZCI6MTc5MjYyLCJuYW1lIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFjMlZ5SWpwN0ltbGtJam96TURNM016YzRMQ0p3YUc5dVpTSTZJakE1TURnNE1EWTFPRFFpTENKdVlXMWxJam9pVm5VaUxDSjBlWEJsSWpvaVkzVnpkRzl0WlhJaWZTd2lkR2x0WlNJNk1UQXdNREF3TENKcFlYUWlPakUxT1RJME5qazJNemdzSW1WNGNDSTZNVFU1TlRRMk9UWXpPSDAuNm5sWGphaWhORk5Mb2k5UjRUYktFT2dtRHFFNTdfWDV3VlQzNHFoRzlfRSIsInBob25lIjoiMDk3MzUxMTMyMSIsImlhdCI6MTU5MjQ3ODY3OCwiZXhwIjoxNTkyNDc4NzM4fQ.cQw_UNT5kAyd9fLK4d8pOywv0P3OS2MZoPZ65I6Xb8c";
 //    private String                     token              = Config.token;
     private String                     UriNotice          = Config.uri+"/api/notice/get-text-show";
+    private String                     UricheckMall       = Config.uri+"/api/notice/get-all-notice";
 
     public interface GetUserInfo {
         void getInfo(JsonValue data);
         void checktoken(JsonValue data);
         void getNotice(JsonValue data);
         void getCountDown(JsonValue data);
+        void CheckMall(JsonValue data);
         void Fail(String s);
 
     }
@@ -145,7 +147,7 @@ public class HttpGetToken {
             }
         });
     }
-  public void GetCountDown(){
+    public void GetCountDown(){
     Net.HttpRequest httpPost = new Net.HttpRequest(Net.HttpMethods.GET);
     httpPost.setUrl(UriCountDown);
     httpPost.setHeader("Content-Type", "application/x-www-form-urlencoded");
@@ -180,5 +182,44 @@ public class HttpGetToken {
       }
     });
   }
+    public void checkMall(){
+        Net.HttpRequest httpPost = new Net.HttpRequest(Net.HttpMethods.POST);
+        httpPost.setUrl(UricheckMall);
+        httpPost.setHeader("Content-Type", "application/x-www-form-urlencoded");
+//        httpPost.setHeader("Content-Type", "x-www-form-urlencoded");
+        httpPost.setContent("megaID="+Config.megaID+"&token="+Config.token);
+        httpPost.setTimeOut(15000);
+        Gdx.net.sendHttpRequest(httpPost, new Net.HttpResponseListener() {
+            @Override
+            public void handleHttpResponse(Net.HttpResponse httpResponse) {
+
+                status = httpResponse.getStatus().getStatusCode();
+                System.out.println("here: "+status);
+                if(status==200){
+//                    System.out.println(httpResponse.getResultAsString());
+                    String data = httpResponse.getResultAsString();
+//                    System.out.println("check: "+data);
+
+                    JsonValue jv = utils.GetJsV(data);
+                    getData.CheckMall(jv);
+                }else {
+                    getData.Fail("loi mang");
+
+                }
+            }
+
+            @Override
+            public void failed(Throwable t) {
+                t.printStackTrace();
+                getData.Fail("load that bai!!");
+
+            }
+
+            @Override
+            public void cancelled() {
+
+            }
+        });
+    }
 
 }

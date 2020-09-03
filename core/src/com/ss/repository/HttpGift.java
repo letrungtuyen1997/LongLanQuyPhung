@@ -31,7 +31,7 @@ public class HttpGift {
         Net.HttpRequest httpPost = new Net.HttpRequest(Net.HttpMethods.POST);
         httpPost.setUrl(Uri);
         httpPost.setHeader("Content-Type", "application/x-www-form-urlencoded");
-        httpPost.setContent("megaID="+ Config.megaID+"&token="+Config.token+"&type="+type+"&amount="+anount+"&reciMegaID=MEGA1"+reciMegaID);
+        httpPost.setContent("megaID="+ Config.megaID+"&token="+Config.token+"&type="+type+"&amount="+anount+"&reciMegaID="+reciMegaID);
         httpPost.setTimeOut(15000);
         Gdx.net.sendHttpRequest(httpPost, new Net.HttpResponseListener() {
             @Override
