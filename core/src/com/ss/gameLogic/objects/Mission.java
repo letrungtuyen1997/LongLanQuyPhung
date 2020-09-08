@@ -139,7 +139,7 @@ public class Mission implements HttpMission.GetMission {
               grT.addActor(label1);
               ///////////// title 1///////
               String lb3 = "làm hằng ngày";
-              if(Type==6){
+              if(Type==6||Type==7){
                 lb3="làm một lần!";
               }
               Label label2 = new Label("Trạng thái: "+lb3,new Label.LabelStyle(BitmapFontC.font_brown,null));

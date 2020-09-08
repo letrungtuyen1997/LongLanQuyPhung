@@ -116,13 +116,13 @@ public class Mall implements HttpMall.GetMission {
                     grT.addActor(tile);
                     ///////////// title ///////
                     Label label = new Label("Bạn được "+user+" tặng\n"+amount+" "+name+"\nVào lúc "+ Utils.ConvertDateTime(time+""),new Label.LabelStyle(BitmapFontC.Font_brown_thin,null));
-                    label.setFontScale(0.35f,-0.35f);
+                    label.setFontScale(0.32f,-0.32f);
                     label.setAlignment(Align.left);
                     label.setPosition(tile.getX()+20,tile.getY()+tile.getHeight()/2,Align.left);
                     grT.addActor(label);
                     //////// button get/////////
                     Image btn = GUI.createImage(TextureAtlasC.UiAtlas,"btnTake");
-                    btn.setScale(0.7f,-0.7f);
+                    btn.setScale(0.6f,-0.6f);
                     btn.setOrigin(Align.center);
                     btn.setPosition(tile.getX()+tile.getWidth()-btn.getWidth(),tile.getY()+tile.getHeight()*0.2f);
                     grT.addActor(btn);

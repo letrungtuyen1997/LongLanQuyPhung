@@ -50,7 +50,6 @@ public interface IPlatform {
     public interface OnVideoRewardClosed{
         public void OnEvent(boolean success);
     }
-
     public interface OnPopupCallback{
         public void OnValue(String value);
     }

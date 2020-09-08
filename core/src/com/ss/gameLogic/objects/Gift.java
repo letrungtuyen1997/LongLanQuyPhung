@@ -264,7 +264,11 @@ public class Gift implements HttpGift.PostGift {
                     System.out.println("amount: "+countAmount);
                     System.out.println("megaID: "+ Config.megaID);
                     System.out.println("reciID: "+ reciMegaID);
-                    httpGift.PostGift(Type,countAmount,reciMegaID);
+                    //label fix here!!!!
+                    if(toUpperCaseText(reciMegaID.substring(0,5)).equals("MEGA1"))
+                        httpGift.PostGift(Type,countAmount,reciMegaID.substring(5));
+                    else
+                        httpGift.PostGift(Type,countAmount,reciMegaID);
                 }else {
                     notice(GStage.getWorldWidth()/2,GStage.getWorldHeight()/2,"bạn chưa chọn thẻ hoặc mảnh",Color.RED);
                 }
@@ -272,6 +276,18 @@ public class Gift implements HttpGift.PostGift {
                 return super.touchDown(event, x, y, pointer, button);
             }
         });
+    }
+    private String toUpperCaseText(String text){
+        String Upper ="";
+        for (int i =0; i<text.length();i++){
+            String charter =""+ text.charAt(i);
+            Upper+=charter.toUpperCase();
+        }
+        if(Upper.equals("MEGA1"))
+            return Upper;
+        else
+            return text;
+
     }
 
 

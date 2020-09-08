@@ -102,8 +102,13 @@ public class GameScene extends GScreen implements HttpGetToken.GetUserInfo {
       System.out.println("check condi_merge: "+Config.condi_merge);
       AwaitData();
       httpGetToken.CheckToken(Config.token);
+      String text = "mega10493999";
+      System.out.println("check text :"+text.substring(0,5));
+      System.out.println("check text :"+text);
+
 
     }
+
     void aniIconTitle(Image ic){
         ic.addAction(Actions.sequence(
                 Actions.scaleTo(1.2f,0.8f,0.5f),
